@@ -1,0 +1,49 @@
+.footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.items-wrapper {
+    text-align: center;
+    align-items: center;
+    width: 850px;
+    margin: 14px auto 0;
+    height: 80px;
+}
+
+.footer-item {
+    display: inline-flex;
+    width: 250px;
+    margin: 0 16px;
+}
+
+.footer-item img {
+    height: 58px;
+    display: inline-flex;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.footer-item p {
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14.5px;
+    color: #253B56;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: -.6px;
+}
+
+.credits {
+    font-size: 16px;
+    color: #253B56;
+    display: fixed;
+    text-align: center;
+    bottom: 0;
+}

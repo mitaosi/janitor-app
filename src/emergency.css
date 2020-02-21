@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+.emergency {
+    margin: 10px 30px;
+    border-radius: 17px;
+    background-color: #F20000;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+.emergency-label {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin: 0;
+    padding-left: 14px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.emergency .task-item {
+    display: block;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(rgb(255,255,255), rgb(235,246,252));
+    padding: 12px;
+    margin-top: 3px !important;
+    margin-bottom: 1px !important;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.blink .task-title, .blink .task-location {
+    animation: makeTextBlink 1.5s infinite;
+
+}
+
+.blink .pin {
+    animation: makePinBlink 1.5s infinite;
+}
+
+.blink .pin-red {
+    animation: makeRedPinBlink 1.5s infinite;
+}
+
+.blink .task-button {
+    animation: makeButtonBlink 1.5s infinite;
+}
+
+.blink .task-item {
+    animation: makeBgBlink 1.5s infinite;
+}
+
+@keyframes makeTextBlink {
+    0% {color:#1A94D7;}
+    49.99% {color:#1A94D7;}
+    50% {color:#F20000;}
+    99.99% {color:#F20000;}
+    100% {color:#1A94D7;}
+}
+
+@keyframes makePinBlink {
+    0% {opacity: 1;}
+    49.99% {opacity: 1;}
+    50% {opacity: 0;}
+    99.99% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes makeRedPinBlink {
+    0% {opacity: 0;}
+    45% {opacity: 0;}
+    50% {opacity: 1;}
+    99.99% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes makeButtonBlink {
+    0% {background: #1A94D7;}
+    49.99% {background: #1A94D7;}
+    50% {background: #F20000;}
+    99.99% {background: #F20000;}
+    100% {background: #1A94D7;}
+}
+
+@keyframes makeBgBlink {
+    0% {background: linear-gradient(rgb(255,255,255), rgb(235,246,252));}
+    49.99% {background: linear-gradient(rgb(255,255,255), rgb(235,246,252));}
+    50% {background: linear-gradient(rgb(255,255,255), rgb(250,237,237));}
+    99.99% {background: linear-gradient(rgb(255,255,255), rgb(250,237,237));}
+    100% {background: linear-gradient(rgb(255,255,255), rgb(235,246,252));}
+}

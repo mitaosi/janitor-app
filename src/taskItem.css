@@ -1,0 +1,289 @@
+
+.task-item {
+    display: block;
+    position: relative;
+    width: 762px;
+    margin: 10px auto !important;
+    border: 2px #253B56 solid;
+    border-radius: 16px;
+    background-image: linear-gradient(rgb(255,255,255), rgb(235,246,252));
+    padding: 12px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.task-item-complete {
+    display: table;
+    width: 762px;
+    align-items: center;
+    margin: 10px auto !important;
+    border: 2px #253B56 solid;
+    border-radius: 16px;
+    background-image: linear-gradient(rgb(255,255,255), rgb(235,246,252));
+    padding: 12px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+.task-item-complete:hover {
+    cursor: pointer;
+}
+
+.task-item-complete:active .task-note {
+    display: block;
+}
+
+.initial-task-item {
+    width: 100%;
+    display: flex;
+}
+
+.task-description {
+    margin-top: -4px;
+    width: 60%;
+    height: 56px;
+}
+
+.task-description-complete {
+    margin-top: -4px;
+    width: 45%;
+    height: 56px;
+}
+
+.task-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 28px;
+    color: #1A94D7;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.pin-wrapper {
+    display: inline-flex;
+    width: 11px;
+    height: 18px;
+}
+
+.pin-wrapper img {
+    height: 14px;
+    width: 11px;
+}
+
+.pin {
+    margin-left: -11px;
+}
+
+.pin-complete {
+    display: inline-flex;
+    margin-right: 4px;
+    width: 11px;
+}
+
+.task-location {
+    display: inline-block;
+    margin: 0 4px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1A94D7;
+}
+
+.task-location-complete {
+    display: inline-flex;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1A94D7;
+    margin: 0;
+}
+
+.task-button {
+    margin-left: auto;
+    width: 40%;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    font-size: 18px;
+    background-color: #1A94D7;
+    text-decoration: none;
+}
+
+#display-destination {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: -4px;
+}
+
+#display-destination>* {
+    display: inline-block;
+}
+
+
+
+#walking-man {
+    height: 90px;
+    margin: 0 auto;
+    margin-right: 10px;
+}
+
+#destination-text {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#destination-text span {
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A94D7;
+}
+
+
+
+#destination {
+    height: 90px;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+
+#arrow {
+    height: 48px;
+}
+
+.leave-comment {
+    background-color: #1A94D7;
+    border-radius: 12px;
+    height: 100px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -4px;
+}
+
+.write {
+    display: inline-block;
+    height: 12px;
+    margin-left: 12px;
+    margin-right: 6px;
+}
+
+.leave-comment p {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 1px 0;
+    color: #FFFFFF;
+
+}
+
+.leave-comment textarea {
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 4px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    width: 736px;
+    height: 67px;
+    padding: 5px 10px;
+    resize: none;
+    color: #253B56;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.leave-comment textarea::placeholder {
+    color: #C2C2C2;
+}
+
+
+
+.task-time{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    color: #1A94D7;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 130px;
+}
+
+.task-date {
+    width: 220px;
+    margin-top: 8px;
+}
+
+.task-start, .task-finish {
+    width: 90px;
+    margin-top: 8px;
+}
+
+.task-start {
+    margin-right: 20px;
+}
+
+.label {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 8px;
+    color: #253B56;
+    margin: 0;
+}
+
+.value {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 26px;
+    color: #1A94D7;
+}
+
+
+.task-note {
+    display: none;
+    border: none;
+    margin: 0;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+}
+
+#note-icon {
+    height: 18px;
+    margin-right: 8px;
+    display: inline-flex;
+    width: 18px;
+}
+
+.note-content {
+    display: inline-flex;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    border: none;
+    color: #1A94D7;
+    margin: 0;
+    width: 730px;
+}
+
+.task-item-details {
+    display: flex;
+}
